@@ -4,7 +4,7 @@ dist/*
 .devcontainer/*
 !.devcontainer/devcontainer.json
 !.devcontainer/post-install.sh
-dist
+# dist
 
 .DS_Store
 .vscode/*
