@@ -131,7 +131,7 @@ export function getTitleHTML(config: atomicCardConfig, event: EventClass, hass: 
 	let { title } = event;
 
 	// Hide client codes in HA calendar
-	title = title.replace(/Client.*/, 'Client 🤐');
+	title = title.replace(/Client [a-zA-Z]*/, 'Client 🤐');
 
 	if (!isHtml(event.title) && config.titleLength && event.title.length > config.titleLength) {
 		title = event.title.slice(0, config.titleLength) + '...';
